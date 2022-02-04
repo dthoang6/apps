@@ -24,7 +24,7 @@
  * 3. See if you can guess what will show up in the browser before running the code
  * 4. See if you can explain what actually shows up in the browser
  */
-const page = (
+/* const page = (
   <div>
     <h1>append JSX with append function</h1>
     <p>1. What will show up in the browser before running the code?</p>
@@ -37,6 +37,39 @@ const page = (
   </div>
 );
 
-//document.getElementById("root").append(JSON.stringify(page));
+//document.getElementById("root").append(JSON.stringify(page)); */
 
-ReactDOM.render(page, document.getElementById("root"));
+/**
+ * Challenge 3: starting from scratch, build and render the HTML for our section project. Check the Google slide for what you're trying to build.
+ */
+function Page() {
+  //custom component
+  return (
+    <div>
+      <img src="./tomhoangdev.jpg" />
+      <h1>Fun Facts about Tom</h1>
+      <ul>
+        <li>is Front-End React Developer.</li>
+        <li>is graduated from Cal Poly Pomona with B.S. Computer Science.</li>
+        <li>like reading coding book.</li>
+        <li>like cooking and travel.</li>
+      </ul>
+    </div>
+  );
+}
+ReactDOM.render(<Page />, document.getElementById("root"));
+
+const page = ( //JSX component
+  <div>
+    <img src="./tomhoangdev.jpg" />
+    <h1>Fun Facts about Tom</h1>
+    <ul>
+      <li>is Front-End React Developer.</li>
+      <li>is graduated from Cal Poly Pomona with B.S. Computer Science.</li>
+      <li>like reading coding book.</li>
+      <li>like cooking and travel.</li>
+    </ul>
+  </div>
+);
+
+//ReactDOM.render(page, document.getElementById("root"));
