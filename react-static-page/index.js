@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**Challenge 1:
  * create a navbar in jsx
  * -use the semantic nav element as the parent wrapper
@@ -44,9 +45,27 @@
  */
 /* function Page() {
   //custom component
+=======
+function Header() {
+  return (
+    <header>
+      <nav className="nav">
+        <img src="./tomhoangdev.jpg" className="header-img" />
+        <ul className="nav-items">
+          <li>About</li>
+          <li>Work</li>
+          <li>Projects</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+function MainContent() {
+>>>>>>> a916646fac95c34b233f49faad76d75652a59523
   return (
     <div>
-      <img src="./tomhoangdev.jpg" />
       <h1>Fun Facts about Tom</h1>
       <ul>
         <li>is Front-End React Developer.</li>
@@ -57,6 +76,7 @@
     </div>
   );
 }
+<<<<<<< HEAD
 ReactDOM.render(<Page />, document.getElementById("root")); */
 
 const page = ( //JSX component
@@ -72,3 +92,16 @@ const page = ( //JSX component
 );
 
 ReactDOM.render(page, document.getElementById("root"));
+=======
+
+function Page() {
+  //Composable component
+  return (
+    <div>
+      <Header />
+      <MainContent />
+    </div>
+  );
+}
+ReactDOM.render(<Page />, document.getElementById("root"));
+>>>>>>> a916646fac95c34b233f49faad76d75652a59523
