@@ -42,7 +42,7 @@
 /**
  * Challenge 3: starting from scratch, build and render the HTML for our section project. Check the Google slide for what you're trying to build.
  */
-function Page() {
+/* function Page() {
   //custom component
   return (
     <div>
@@ -57,11 +57,10 @@ function Page() {
     </div>
   );
 }
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<Page />, document.getElementById("root")); */
 
 const page = ( //JSX component
   <div>
-    <img src="./tomhoangdev.jpg" />
     <h1>Fun Facts about Tom</h1>
     <ul>
       <li>is Front-End React Developer.</li>
@@ -72,4 +71,4 @@ const page = ( //JSX component
   </div>
 );
 
-//ReactDOM.render(page, document.getElementById("root"));
+ReactDOM.render(page, document.getElementById("root"));
